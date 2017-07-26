@@ -1,0 +1,52 @@
+[core]
+  whitespace = indent-with-non-tab tab-in-indent trailing-space -blank-at-eof
+[grep]
+  line-number = true
+[help]
+  autocorrect = 1
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  br = branch
+  sta = stash
+  w = whatchanged
+  llog = log --date=local
+  lol = log --graph --oneline
+  lola = log --graph --oneline --all
+  lup = log @{u}... --left-right --graph
+  rage = !"for branch in `git branch -r | awk '{print $1}'`; do echo `git log -1 $branch --pretty=format:"%at:%%$branch%%%cr%%%cn%n"`;done | column -t -s'%' | sort -nr | cut -d ':' -f 2"
+  lage = !"for branch in `git branch | sed 's/^\\* /\\ \\ /'`; do echo `git log -1 --pretty=format:"%at:%%$branch%%%cr%%%cn%n" $branch`;done | column -t -s'%' | sort -nr | cut -d ':' -f 2"
+[apply]
+  whitespace = nowarn
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[branch]
+  autosetupmerge = true
+  autosetuprebase = remote
+[clean]
+  require-force = false
+[push]
+  default = upstream
+[rerere]
+  enabled = true
+[rebase]
+  autosquash = true
+  stat = true
+[format]
+  pretty = format:"%h %C(yellow)%cr%Creset %Cgreen%an%Creset | %s"
+[user]
+  name = Kris Hicks
+  email = krishicks@gmail.com
+  initials = kh
+[advice]
+  pushNonFastForward = false
+  statusHints = false
