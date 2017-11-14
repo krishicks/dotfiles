@@ -4,3 +4,9 @@
 clear lock
 keycode 66 = Control_L
 add control = Control_L
+
+!
+! "Natural" scrolling (4->5, 6->7)
+! Set Evoluent mouse buttons (8->9, 9->10, 10->8)
+!
+!pointer = 1 2 3 5 4 7 6 9 10 8 11 12 13 14
