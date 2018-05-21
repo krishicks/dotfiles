@@ -1,5 +1,6 @@
 [core]
   whitespace = indent-with-non-tab tab-in-indent trailing-space -blank-at-eof
+  hooksPath = /home/kris/workspace/git-hooks-core
 [grep]
   line-number = true
 [help]
