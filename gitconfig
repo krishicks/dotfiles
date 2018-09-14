@@ -16,8 +16,10 @@
   lol = log --graph --oneline
   lola = log --graph --oneline --all
   lup = log ...@{u} --left-right --graph
+  up = log ...@{u} --left-right --graph
   rage = !"for branch in `git branch -r | awk '{print $1}'`; do echo `git log -1 $branch --pretty=format:"%at:%%$branch%%%cr%%%cn%n"`;done | column -t -s'%' | sort -nr | cut -d ':' -f 2"
   lage = !"for branch in `git branch | sed 's/^\\* /\\ \\ /'`; do echo `git log -1 --pretty=format:"%at:%%$branch%%%cr%%%cn%n" $branch`;done | column -t -s'%' | sort -nr | cut -d ':' -f 2"
+  add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 [apply]
   whitespace = nowarn
 [color]
@@ -51,3 +53,13 @@
 [advice]
   pushNonFastForward = false
   statusHints = false
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[diff]
+  renameLimit = 5000
+[fetch]
+  prune = true
+  pruneTags = true
