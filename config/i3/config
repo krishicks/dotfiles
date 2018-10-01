@@ -12,7 +12,6 @@
 
 exec_always --no-startup-id "xmodmap ~/.Xmodmap"
 exec_always --no-startup-id "xset r rate 200 40"
-exec_always --no-startup-id "xrandr --dpi 144 --output eDP-1 --auto --pos 0x0 --panning 3200x1800 --primary --output DP-1-2 --auto --pos 3200x0 --verbose --right-of eDP-1; and xset r rate 200 40"
 exec --no-startup-id "xscreensaver -no-splash"
 exec --no-startup-id "redshift"
 exec --no-startup-id "nm-applet"
