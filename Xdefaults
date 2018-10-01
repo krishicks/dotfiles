@@ -1,0 +1,73 @@
+! General
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            5000
+URxvt.internalBorder:       3
+URxvt.lineSpace: 0
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Use keyboard shortcuts to select and copy text
+URxvt.perl-ext-common: keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
+
+! Fonts
+URxvt.font:xft:Iosevka:pixelsize=18:antialias=true:hinting=true:style=Regular
+URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=false:style=Regular
+! URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=true
+URxvt.allow_bold:false
+
+URxvt.letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:rxvt
+URxvt.scrollBar:false
+
+! Colors
+
+*background: #f1f1f1
+*foreground: #424242
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!! black dark/light
+*color0: #212121
+*color8: #212121
+
+!! red dark/light
+*color1: #c30771
+*color9: #fb007a
+
+!! green dark/light
+*color2: #10a778
+*color10: #5fd7af
+
+!! yellow dark/light
+*color3: #a89c14
+*color11: #f3e430
+
+!! blue dark/light
+*color4: #008ec4
+*color12: #20bbfc
+
+!! magenta dark/light
+*color5: #523c79
+*color13: #6855de
+
+!! cyan dark/light
+*color6: #20a5ba
+*color14: #4fb8cc
+
+!! white dark/light
+*color7: #e0e0e0
+*color15: #f1f1f1
