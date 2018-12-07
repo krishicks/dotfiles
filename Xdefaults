@@ -24,50 +24,70 @@ URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=false:style=Regu
 ! URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=true
 URxvt.allow_bold:false
 
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 ! Scrollbar
 URxvt.scrollStyle:rxvt
 URxvt.scrollBar:false
 
-! Colors
+! Colors 
+!! 0/8  black
+!! 1/9  red
+!! 2/10 green
+!! 3/11 yellow
+!! 4/12 blue
+!! 5/13 magenta
+!! 6/14 cyan
+!! 7/15 white
 
+!!! Pencil Light
 *background: #f1f1f1
 *foreground: #424242
 !!*fading: 40
-*fadeColor: #002b36
+!!*fadeColor: #002b36
 *cursorColor: #93a1a1
 *pointerColorBackground: #586e75
 *pointerColorForeground: #93a1a1
-
-!! black dark/light
+!! normal
 *color0: #212121
-*color8: #212121
-
-!! red dark/light
 *color1: #c30771
-*color9: #fb007a
-
-!! green dark/light
 *color2: #10a778
-*color10: #5fd7af
-
-!! yellow dark/light
 *color3: #a89c14
-*color11: #f3e430
-
-!! blue dark/light
 *color4: #008ec4
-*color12: #20bbfc
-
-!! magenta dark/light
 *color5: #523c79
-*color13: #6855de
-
-!! cyan dark/light
 *color6: #20a5ba
-*color14: #4fb8cc
-
-!! white dark/light
 *color7: #e0e0e0
+!! bright
+*color8: #212121
+*color9: #fb007a
+*color10: #5fd7af
+*color11: #f3e430
+*color12: #20bbfc
+*color13: #6855de
+*color14: #4fb8cc
 *color15: #f1f1f1
+
+/* !! Colors (Dracula) */
+/* *background: #282a36 */
+/* *foreground: #f8f8f2 */
+/* /1* *cursorColor: #93a1a1 *1/ */
+/* /1* *pointerColorBackground: #586e75 *1/ */
+/* /1* *pointerColorForeground: #93a1a1 *1/ */
+/* !! normal */
+/* *color0: #000000 */
+/* *color1: #ff5555 */
+/* *color2: #50fa7b */
+/* *color3: #f1fa8c */
+/* *color4: #bd93f9 */
+/* *color5: #ff79c6 */
+/* *color6: #8be9fd */
+/* *color7: #bbbbbb */
+/* !! bright */
+/* *color8:  #555555 */
+/* *color9:  #ff5555 */
+/* *color10: #50fa7b */
+/* *color11: #f1fa8c */
+/* *color12: #caa9fa */
+/* *color13: #ff79c6 */
+/* *color14: #8be9fd */
+/* *color15: #ffffff */
