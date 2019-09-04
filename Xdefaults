@@ -3,6 +3,7 @@ URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
 URxvt.fading:               0
+URxvt.termName:	            xterm-256color
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
@@ -19,10 +20,10 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard: true
 
 ! Fonts
-URxvt.font:xft:Iosevka:pixelsize=18:antialias=true:hinting=true:style=Regular
-URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=false:style=Regular
+URxvt.font:xft:Iosevka:pixelsize=14:antialias=true:hinting=true:style=Regular
+!URxvt.boldFont:xft:Iosevka:pixelsize=14:antialias=false:hinting=false:style=Regular
 ! URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=true
-URxvt.allow_bold:false
+URxvt.allow_bold:true
 
 URxvt.letterSpace: 0
 
@@ -41,53 +42,122 @@ URxvt.scrollBar:false
 !! 7/15 white
 
 !!! Pencil Light
-*background: #f1f1f1
-*foreground: #424242
-!!*fading: 40
-!!*fadeColor: #002b36
-*cursorColor: #93a1a1
-*pointerColorBackground: #586e75
-*pointerColorForeground: #93a1a1
-!! normal
-*color0: #212121
-*color1: #c30771
-*color2: #10a778
-*color3: #a89c14
-*color4: #008ec4
-*color5: #523c79
-*color6: #20a5ba
-*color7: #e0e0e0
-!! bright
-*color8: #212121
-*color9: #fb007a
-*color10: #5fd7af
-*color11: #f3e430
-*color12: #20bbfc
-*color13: #6855de
-*color14: #4fb8cc
-*color15: #f1f1f1
+!*background: #f1f1f1
+!*foreground: #424242
+!!!*fading: 40
+!!!*fadeColor: #002b36
+!*cursorColor: #93a1a1
+!*pointerColorBackground: #586e75
+!*pointerColorForeground: #93a1a1
+!!! normal
+!*color0: #212121
+!*color1: #c30771
+!*color2: #10a778
+!*color3: #a89c14
+!*color4: #008ec4
+!*color5: #523c79
+!*color6: #20a5ba
+!*color7: #e0e0e0
+!!! bright
+!*color8: #212121
+!*color9: #fb007a
+!*color10: #5fd7af
+!*color11: #f3e430
+!*color12: #20bbfc
+!*color13: #6855de
+!*color14: #4fb8cc
+!*color15: #f1f1f1
 
-/* !! Colors (Dracula) */
-/* *background: #282a36 */
-/* *foreground: #f8f8f2 */
-/* /1* *cursorColor: #93a1a1 *1/ */
-/* /1* *pointerColorBackground: #586e75 *1/ */
-/* /1* *pointerColorForeground: #93a1a1 *1/ */
-/* !! normal */
-/* *color0: #000000 */
-/* *color1: #ff5555 */
-/* *color2: #50fa7b */
-/* *color3: #f1fa8c */
-/* *color4: #bd93f9 */
-/* *color5: #ff79c6 */
-/* *color6: #8be9fd */
-/* *color7: #bbbbbb */
-/* !! bright */
-/* *color8:  #555555 */
-/* *color9:  #ff5555 */
-/* *color10: #50fa7b */
-/* *color11: #f1fa8c */
-/* *color12: #caa9fa */
-/* *color13: #ff79c6 */
-/* *color14: #8be9fd */
-/* *color15: #ffffff */
+!! Colors (Dracula)
+*background: #282a36
+*foreground: #f8f8f2
+/1* *cursorColor: #93a1a1 *1/
+/1* *pointerColorBackground: #586e75 *1/
+/1* *pointerColorForeground: #93a1a1 *1/
+!! normal
+*color0: #000000
+*color1: #ff5555
+*color2: #50fa7b
+*color3: #f1fa8c
+*color4: #bd93f9
+*color5: #ff79c6
+*color6: #8be9fd
+*color7: #bbbbbb
+!! bright
+*color8:  #555555
+*color9:  #ff5555
+*color10: #50fa7b
+*color11: #f1fa8c
+*color12: #caa9fa
+*color13: #ff79c6
+*color14: #8be9fd
+*color15: #ffffff
+
+
+!! --- ~/.Xresources ------------------------------------------------------------
+!! ------------------------------------------------------------------------------
+!! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+!! ------------------------------------------------------------------------------
+!! --- http://ciembor.github.com/4bit -------------------------------------------
+!! ------------------------------------------------------------------------------
+!
+!! --- special colors ---
+!
+!*background: #0d1926
+!*foreground: #d9e6f2
+!
+!! --- standard colors ---
+!
+!! black
+!*color0: #000000
+!
+!! bright_black
+!*color8: #262626
+!
+!! red
+!*color1: #b87a7a
+!
+!! bright_red
+!*color9: #dbbdbd
+!
+!! green
+!*color2: #7ab87a
+!
+!! bright_green
+!*color10: #bddbbd
+!
+!! yellow
+!*color3: #b8b87a
+!
+!! bright_yellow
+!*color11: #dbdbbd
+!
+!! blue
+!*color4: #7a7ab8
+!
+!! bright_blue
+!*color12: #bdbddb
+!
+!! magenta
+!*color5: #b87ab8
+!
+!! bright_magenta
+!*color13: #dbbddb
+!
+!! cyan
+!*color6: #7ab8b8
+!
+!! bright_cyan
+!*color14: #bddbdb
+!
+!! white
+!*color7: #d9d9d9
+!
+!! bright_white
+!*color15: #ffffff
+!
+!
+!! ------------------------------------------------------------------------------
+!! --- end of terminal colors section -------------------------------------------
+!! ------------------------------------------------------------------------------
+!

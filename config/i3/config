@@ -42,7 +42,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec rxvt-unicode
+bindsym $mod+Return exec urxvt -e /usr/bin/fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
