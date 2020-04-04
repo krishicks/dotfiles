@@ -9,4 +9,4 @@ set -x GIT_EDITOR vim
 # fzf
 set -x FZF_DEFAULT_COMMAND 'rg --files --no-ignore --hidden --follow --glob "!{.git,go/pkg}/*" 2> /dev/null'
 
-
+fish_gpg_agent
