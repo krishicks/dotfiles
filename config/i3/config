@@ -11,17 +11,24 @@
 #
 
 #exec_always --no-startup-id "xmodmap ~/.Xmodmap"
+
+exec --no-startup-id gnome-flashback
 exec_always --no-startup-id "xset r rate 200 40"
+
+# gnome stuff
+# exec_always --no-startup-id gnome-power-manager
+# exec --no-startup-id /usr/lib/gsd-xsettings
+
 #exec --no-startup-id "xscreensaver -no-splash"
-exec --no-startup-id "redshift"
+#exec --no-startup-id "redshift"
 #exec --no-startup-id "compton -b --backend glx --vsync opengl"
 #exec --no-startup-id "hsetroot -solid #000000" # restore black background as broken by compton
 #exec --no-startup-id "nm-applet"
 
 # Enable "natural" scrolling
-exec --no-startup-id xinput --set-prop Elan\ TrackPoint "libinput Natural Scrolling Enabled" 1
+# not needed with gnome exec --no-startup-id xinput --set-prop Elan\ TrackPoint "libinput Natural Scrolling Enabled" 1
 # Slow down pointer acceleration
-exec --no-startup-id xinput set-prop "Elan TrackPoint" "libinput Accel Speed" -0.4
+# not needed with gnome exec --no-startup-id xinput set-prop "Elan TrackPoint" "libinput Accel Speed" -0.4
 # screen locker
 exec --no-startup-id env XSECURELOCK_SAVER=/usr/lib/xscreensaver/cubicgrid XSECURELOCK_WANT_FIRST_KEYPRESS=1 xss-lock -l -- xsecurelock &
 
