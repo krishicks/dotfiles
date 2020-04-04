@@ -1,9 +1,7 @@
 set fish_greeting ""
 
 # go
-set -x PATH /usr/local/go/bin $PATH
-set -x GOPATH ~/go
-set -x PATH $GOPATH/bin $PATH
+set -x PATH $HOME/go/bin $PATH
 
 # git
 set -x GIT_EDITOR vim
