@@ -1,0 +1,1 @@
+/home/hicks/.fzf/shell/key-bindings.fish
