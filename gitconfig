@@ -1,6 +1,6 @@
 [core]
   whitespace = indent-with-non-tab tab-in-indent trailing-space -blank-at-eof
-  hooksPath = /home/kris/workspace/git-hooks-core
+  hooksPath = /home/hicks/workspace/git/github.com/krishicks/git-hooks-core/
 [grep]
   line-number = true
 [help]
@@ -48,8 +48,9 @@
   pretty = format:"%h %C(yellow)%cr%Creset %Cgreen%an%Creset | %s"
 [user]
   name = Kris Hicks
-  email = krishicks@gmail.com
+  email = khicks@hashicorp.com
   initials = kh
+  signingkey = 0x03C0105305567047
 [advice]
   pushNonFastForward = false
   statusHints = false
@@ -63,3 +64,5 @@
 [fetch]
   prune = true
   pruneTags = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/

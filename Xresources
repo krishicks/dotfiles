@@ -27,16 +27,19 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard: true
 
 ! Fonts
-URxvt.font:xft:Iosevka:pixelsize=14:antialias=true:hinting=true:style=Regular
+URxvt.font:xft:JetBrainsMono:pixelsize=16:antialias=true:hinting=true:style=Regular
 !URxvt.boldFont:xft:Iosevka:pixelsize=14:antialias=false:hinting=false:style=Regular
 ! URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=true
 URxvt.allow_bold:true
 
 ! URxvt.letterSpace: 0
 
-! Scrollbar
+! Scrolling
 ! URxvt.scrollStyle:rxvt
 URxvt.scrollBar:false
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
 
 ! Colors 
 !! 0/8  black

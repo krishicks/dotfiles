@@ -4,6 +4,8 @@ syntax on                  " Enable syntax highlighting.
 " whitespace handling
 set autoindent             " Indent according to previous line.
 set shiftround             " >> indents to next multiple of 'shiftwidth'.
+set shiftwidth  =2
+set tabstop     =2
 set expandtab              " Use spaces instead of tabs.
 
 " keys
@@ -81,7 +83,7 @@ set noendofline
 nnoremap <silent> <C-p> :Files<cr>
 
 " Go
-let g:go_fmt_command = "goimports"
+" let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -89,3 +91,9 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_interfaces = 1
 let g:go_auto_sameids = 1
+
+" Mouse
+set mouse=a
+
+" Show line numbers
+set number
