@@ -5,17 +5,8 @@ URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 URxvt.matcher.rend.0: Uline Bold fg5! General
 
-!URxvt.depth:                32
-!URxvt.geometry:             90x30
-!URxvt.transparent:          false
-!URxvt.fading:               0
-!URxvt.termName:	            xterm-256color
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
 URxvt.loginShell:           true
 URxvt.saveLines:            10000
-! URxvt.internalBorder:       3
-! URxvt.lineSpace: 0
 
 ! Disable ISO 14755 mode, fixes ctrl+shift issue
 URxvt.iso14755: false
@@ -28,8 +19,6 @@ URxvt.keyboard-select.clipboard: true
 
 ! Fonts
 URxvt.font:xft:JetBrainsMono:pixelsize=16:antialias=true:hinting=true:style=Regular
-!URxvt.boldFont:xft:Iosevka:pixelsize=14:antialias=false:hinting=false:style=Regular
-! URxvt.boldFont:xft:Iosevka:pixelsize=18:antialias=false:hinting=true
 URxvt.allow_bold:true
 
 ! URxvt.letterSpace: 0
