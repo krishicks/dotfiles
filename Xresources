@@ -18,7 +18,8 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard: true
 
 ! Fonts
-URxvt.font:xft:JetBrainsMono:pixelsize=16:antialias=true:hinting=true:style=Regular
+URxvt.font:xft:JetBrainsMono:size=12:style=Regular
+! URxvt.font:xft:Iosevka:size=14
 URxvt.allow_bold:true
 
 ! URxvt.letterSpace: 0
