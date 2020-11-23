@@ -223,3 +223,5 @@ bindsym $mod+Pause mode "$mode_system"
 
 # Always move zoom windows to #6
 assign [class="zoom"] 6
+
+focus_wrapping no
