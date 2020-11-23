@@ -85,14 +85,27 @@ let g:fzf_layout = { 'down': '~40%' }    " force results not to be in floating w
 let g:fzf_preview_window = []            " disable preview window
 
 " Go
-" let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_interfaces = 1
-let g:go_auto_sameids = 1
+let g:go_auto_sameids = 1                  " auto-run go sameids on item under cursor
+let g:go_doc_popup_window = 1
+" let g:go_auto_type_info = 1                " get type info for type under cursor
+" let g:go_def_reuse_buffer = 1
+" let g:go_list_autoclose = 0
+" let g:go_term_mode = "vsplit"
+let g:go_term_enabled = 1
+let g:go_term_reuse = 1
+let g:go_term_close_on_exit = 0
+" let g:go_debug=['lsp']
+noremap <leader>T :GoTestFunc!<enter>
+noremap <leader>t :GoTest!<enter>
+autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 
 " Mouse
 set mouse=a
