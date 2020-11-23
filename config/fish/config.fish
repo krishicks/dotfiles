@@ -9,6 +9,10 @@ function is_command
         command -v $argv >/dev/null
 end
 
+# git
+set -x GIT_EDITOR vim
+set -x EDITOR $GIT_EDITOR
+
 if test -d /usr/local/go/bin
         set -x PATH /usr/local/go/bin $PATH
 end
