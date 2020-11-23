@@ -81,6 +81,8 @@ set noendofline
 
 " fzf = Ctrl-P
 nnoremap <silent> <C-p> :Files<cr>
+let g:fzf_layout = { 'down': '~40%' }    " force results not to be in floating window
+let g:fzf_preview_window = []            " disable preview window
 
 " Go
 " let g:go_fmt_command = "goimports"
