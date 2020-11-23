@@ -32,9 +32,6 @@ exec_always --no-startup-id "xset r rate 200 40"
 # screen locker
 exec --no-startup-id env XSECURELOCK_SAVER=/usr/lib/xscreensaver/cubicgrid xss-lock -l -- xsecurelock &
 
-# i3-gnome stuff
-exec --no-startup-id gnome-flashback
-
 set $mod Mod4
 
 # bindsym Mod1+BackSpace exec xscreensaver-command -lock
