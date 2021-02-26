@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+dev="$(ykman list --serials | fzf -1)"
+ykman --device $dev oath code -s "$(ykman --device $dev oath list | fzf)" | xclip -sel clip -i
