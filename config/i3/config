@@ -30,7 +30,7 @@ exec_always --no-startup-id "xset r rate 200 40"
 # Slow down pointer acceleration
 # not needed with gnome exec --no-startup-id xinput set-prop "Elan TrackPoint" "libinput Accel Speed" -0.4
 # screen locker
-exec --no-startup-id env XSECURELOCK_SAVER=/usr/lib/xscreensaver/cubicgrid xss-lock -l -- xsecurelock &
+exec --no-startup-id env XSECURELOCK_SAVER=/usr/lib/xscreensaver/fadeplot xss-lock -l -- xsecurelock &
 
 set $mod Mod4
 
