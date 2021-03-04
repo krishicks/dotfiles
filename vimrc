@@ -107,6 +107,9 @@ noremap <leader>t :GoTest!<enter>
 autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 
+" Rust
+let g:rustfmt_autosave = 1
+
 " Mouse
 set mouse=a
 
